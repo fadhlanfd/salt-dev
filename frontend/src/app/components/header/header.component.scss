@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2196f3; /* Ubah warna latar belakang sesuai preferensi Anda */
+  color: #ffffff; /* Ubah warna teks sesuai preferensi Anda */
+}
+
+.logo {
+  margin-left: 20px; /* Beri jarak pada kiri logo */
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu a {
+  color: #ffffff; /* Ubah warna teks menu sesuai preferensi Anda */
+  margin-right: 20px; /* Beri jarak antara menu */
+  font-size: 16px; /* Sesuaikan ukuran font sesuai preferensi Anda */
+  text-decoration: none; /* Hapus dekorasi tautan */
+  transition: color 0.3s ease; /* Efek transisi untuk perubahan warna */
+
+  &:hover {
+    color: #cccccc; /* Ubah warna teks saat hover sesuai preferensi Anda */
+  }
+}
+
+.search {
+  margin-right: 20px; /* Beri jarak pada kanan kolom pencarian */
+}
+
+/* Tambahkan gaya pada tombol pencarian */
+.search button {
+  background-color: #1976D2; /* Warna latar belakang */
+  color: #FFFFFF; /* Warna teks */
+  border: none; /* Hilangkan border */
+  border-radius: 4px; /* Bentuk border */
+  padding: 8px 16px; /* Padding di dalam tombol */
+  cursor: pointer; /* Ubah kursor saat diarahkan ke tombol */
+  transition: background-color 0.3s ease; /* Efek transisi pada perubahan warna latar belakang */
+
+  /* Tambahkan efek hover */
+  &:hover {
+    background-color: #1565C0; /* Ubah warna latar belakang saat dihover */
+  }
+}
+
+.mat-form-field {
+  color: #ffffff; /* Ubah warna teks input sesuai preferensi Anda */
+}

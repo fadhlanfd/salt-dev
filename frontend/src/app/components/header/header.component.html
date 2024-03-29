@@ -1,0 +1,22 @@
+<header class="header">
+  <div class="logo">
+    <h1>Social Network</h1>
+  </div>
+  <nav class="menu" mat-tab-nav-bar>
+    <a mat-tab-link routerLink="/videos" routerLinkActive="active">Videos</a>
+    <a mat-tab-link routerLink="/people" routerLinkActive="active">People</a>
+    <a mat-tab-link routerLink="/documents" routerLinkActive="active">Documents</a>
+    <a mat-tab-link routerLink="/events" routerLinkActive="active">Events</a>
+    <a mat-tab-link routerLink="/communities" routerLinkActive="active">Communities</a>
+    <a mat-tab-link routerLink="/favorites" routerLinkActive="active">Favorites</a>
+    <a mat-tab-link routerLink="/channels" routerLinkActive="active">Channels</a>
+  </nav>
+  <div class="search">
+    <mat-form-field appearance="outline">
+      <input matInput type="text" placeholder="Search">
+      <button mat-button matSuffix>
+        <mat-icon>search</mat-icon>
+      </button>
+    </mat-form-field>
+  </div>
+</header>

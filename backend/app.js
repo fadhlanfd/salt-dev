@@ -1,7 +1,8 @@
 // Import dependencies
 const express = require('express');
 const cors = require('cors');
-const userRoutes = require('./routes/userRoutes'); // Import rute pengguna
+const userRoutes = require('./routes/userRoutes');
+const peopleRoutes = require('./routes/peopleRoutes'); // Import rute pengguna
 ``
 // Create an instance of Express
 const app = express();
@@ -11,7 +12,8 @@ const port = process.env.PORT || 3000;
 app.use(cors());
 
 // Gunakan rute pengguna
-app.use('/api/users', userRoutes); // Mengarahkan semua rute pengguna ke userRoutes
+app.use('/api/users', userRoutes);
+app.use('/api/people', peopleRoutes); // Mengarahkan semua rute pengguna ke userRoutes
 
 // Middleware untuk menangani permintaan yang tidak ditemukan (404)
 app.use((req, res, next) => {

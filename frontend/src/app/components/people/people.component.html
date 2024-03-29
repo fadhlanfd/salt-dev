@@ -1,0 +1,12 @@
+<div class="people-list">
+  <mat-card *ngFor="let person of people" class="card">
+    <img mat-card-image [src]="person.imageUrl" alt="{{ person.name }}">
+    <mat-card-header>
+      <mat-card-title>{{ person.name }}</mat-card-title>
+      <mat-card-subtitle>Age: {{ person.age }}</mat-card-subtitle>
+      <mat-card-subtitle>Role: {{ person.role }}</mat-card-subtitle>
+    </mat-card-header>
+  </mat-card>
+
+  <mat-paginator [length]="totalItems" [pageSize]="pageSize" [pageSizeOptions]="pageSizeOptions" class="mat-paginator"></mat-paginator>
+</div>
